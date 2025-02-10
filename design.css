@@ -1,8 +1,19 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
 body {
     font-family: 'roboto', 'open sans', sans-serif;
     font-size: var(--font-size);
-    background-color: #f4f7fc;
+    background-color: #f8f2df;
     color: #333;
+    padding: 0;
+    margin:0;
+    line-height: 1.5;
+    padding-top:80px;
 }
 
 :root{
@@ -25,10 +36,12 @@ h1, h2, h3, h4, h5{
 
 h1{
     font-size: 45px;
+    text-align: center;
 }
 
 h2{
-    font-size: 40px;
+    font-size: 30px;
+    text-align: center;
 }
 
 h3, h4, h5 {
@@ -52,22 +65,23 @@ a:focus{
 
 header{
     font-size: 20px;
+    padding: 15px;
     background-color:rgb(196, 227, 255);
-    padding: 15px gray;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
     position: fixed;
     border-radius: 10px;
-    text-align: center;
     z-index: 1000;
+    box-sizing: 400px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 p{
     font-size: 15px;
-}
-
-header h1{
-    font-size: 2.5rem;
 }
 
 .right-align{
@@ -86,25 +100,62 @@ img{
 }
 
 .container{
-    padding: 20px;
-}
 
-.section{
-    display: grid;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
+    max-width: 1200px;
+    margin-top: 150px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
+
 
 .sidebar{
-    padding: 15px;
-    background-color:rgb(105, 137, 207)
+    width: 25%;
+    padding: 20px;
+    background-color:rgb(105, 137, 207);
+    border-radius: 8px;
 }
 
-.main-content{
+.sidebar h2{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.sidebar ul{
+    list-style-type:none;
+}
+
+.sidebar ul li{
+    margin: 10px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.sidebar ul li a:hover{
+    color: rgb(72, 73, 76)
+}
+
+.content{
+    width: 70%;
     padding: 20px;
     background-color: white;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
 }
 
 ul, ol{
@@ -147,9 +198,9 @@ form input[type="submit"]:hover{
 
 footer{
     color:white;
-    text-align: center;
     background-color: rgb(170, 212, 244);
     border-top: 2px solid rgb(196, 207, 225);
+    padding: 20px;
 }
 
 footer a{
