@@ -1,0 +1,175 @@
+body {
+    font-family: 'roboto', 'open sans', sans-serif;
+    font-size: var(--font-size);
+    background-color: #f4f7fc;
+    color: #333;
+}
+
+:root{
+    --font-size: 16px;
+    --primary-color: #acc4f6;
+    --hover-color: rgb(122, 132, 168);
+    --box-border-color: rgb(234, 220, 190);
+    --box-shadow: rgba(0, 0, 0, 0.15);
+}
+
+main{
+    padding-top:120px;
+}
+
+h1, h2, h3, h4, h5{
+    color:#333;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+h1{
+    font-size: 45px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3, h4, h5 {
+    font-size: 20px;
+}
+
+a{
+    color:#97a2c6;
+    text-decoration: none;
+    transition: color 0.3s ease
+}
+
+a:hover{
+    color: rgb(104, 152, 186);
+    text-decoration: underline;
+}
+
+a:focus{
+    color:bisque
+}
+
+header{
+    font-size: 20px;
+    background-color:rgb(196, 227, 255);
+    padding: 15px gray;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: fixed;
+    border-radius: 10px;
+    text-align: center;
+    z-index: 1000;
+}
+
+p{
+    font-size: 15px;
+}
+
+header h1{
+    font-size: 2.5rem;
+}
+
+.right-align{
+    float: right;
+}
+
+.padded{
+    padding-top: 200px;
+}
+
+img{
+    border: 5px solid;
+    border-radius: 8px;
+    box-shadow: grey;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.09);
+}
+
+.container{
+    padding: 20px;
+}
+
+.section{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+}
+
+.sidebar{
+    padding: 15px;
+    background-color:rgb(105, 137, 207)
+}
+
+.main-content{
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+ul, ol{
+    margin: 15px;
+}
+
+ul li, ol li{
+    margin-bottom: 10px;
+}
+
+form{
+    flex-direction: column;
+    display: flex;
+    gap: 15px;
+}
+
+form label{
+    margin-bottom: 5px;
+}
+
+form input[type="text"], form input[type="email"]{
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+form input[type="submit"]{
+    background-color:rgb(73, 94, 211);
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.3s;
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(236, 218, 195);
+}
+
+form input[type="submit"]:active{
+    box-shadow:rgb(244, 218, 169)
+}
+
+footer{
+    color:white;
+    text-align: center;
+    background-color: rgb(170, 212, 244);
+    border-top: 2px solid rgb(196, 207, 225);
+}
+
+footer a{
+    color:rgb(107, 122, 207)
+}
+
+footer a:hover{
+    color:rgb(97, 97, 223)
+}
+
+ul li a{
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 10px;
+    color: rgb(96, 119, 177);
+}
+
+p, .main-content, .sidebar, .section{
+    background-color: white;
+    padding: 20px;
+    border: 1px solid var(--box-border-color);
+    box-shadow: 0 4px 8px var(--box-shadow);
+}
