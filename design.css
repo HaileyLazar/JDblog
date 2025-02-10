@@ -137,12 +137,12 @@ form input[type="submit"]{
     transition: background-color 0.2s, box-shadow 0.3s;
 }
 
-form input[type="submit"]:hover{
-    background-color: rgb(236, 218, 195);
-}
-
 form input[type="submit"]:active{
     box-shadow:rgb(244, 218, 169)
+}
+
+form input[type="submit"]:hover{
+    background-color: rgb(236, 218, 195);
 }
 
 footer{
