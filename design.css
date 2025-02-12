@@ -64,6 +64,10 @@ a:focus{
 }
 
 header{
+    
+    .right-align {
+        float: right;
+    }
     font-size: 20px;
     padding: 15px;
     background-color:rgb(196, 227, 255);
