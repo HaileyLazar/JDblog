@@ -102,6 +102,19 @@ img{
     box-shadow: grey;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.09);
 }
+.fade-in{
+    /* width: 100px;
+    height: 100px; */
+    opacity: 0.00;
+    transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -webkit-transition: opacity 1s;
+}
+
+.fade-in:hover{
+    opacity: 1.00;
+}
+
 
 .container{
 
