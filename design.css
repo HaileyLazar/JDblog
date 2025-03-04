@@ -1,3 +1,11 @@
+:root{
+    --font-size: 16px;
+    --primary-color: #acc4f6;
+    --hover-color: rgb(122, 132, 168);
+    --box-border-color: rgb(234, 220, 190);
+    --box-shadow: rgba(0, 0, 0, 0.15);
+}
+
 *{
     box-sizing: border-box;
     margin: 0;
@@ -14,14 +22,6 @@ body {
     margin:0;
     line-height: 1.5;
     padding-top:80px;
-}
-
-:root{
-    --font-size: 16px;
-    --primary-color: #acc4f6;
-    --hover-color: rgb(122, 132, 168);
-    --box-border-color: rgb(234, 220, 190);
-    --box-shadow: rgba(0, 0, 0, 0.15);
 }
 
 main{
@@ -63,11 +63,10 @@ a:focus{
     color:bisque
 }
 
-header{
-    
-    .right-align {
+header.right-align {
         float: right;
     }
+header{
     font-size: 20px;
     padding: 15px;
     background-color:rgb(196, 227, 255);
@@ -76,7 +75,7 @@ header{
     position: fixed;
     border-radius: 10px;
     z-index: 1000;
-    box-sizing: 400px;
+    box-sizing: border-box;
     width: 100%;
     top: 0;
     left: 0;
@@ -99,8 +98,9 @@ p{
 img{
     border: 5px solid;
     border-radius: 8px;
-    box-shadow: grey;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0, 0.09);
+    width:"600";
+    height:"400"
 }
 .fade-in{
     /* width: 100px;
